@@ -20,6 +20,9 @@
      - name: Set python interpreter
        set_fact:
          ansible_python_interpreter: /usr/bin/python3
+     - name: Debug
+       debug: var=ansible_python_interpreter
+
 
      - name: Create a security group
        local_action: 
