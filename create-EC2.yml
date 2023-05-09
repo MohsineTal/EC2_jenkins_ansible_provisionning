@@ -16,6 +16,10 @@
      security_group: ec2-security-group
    
    tasks:
+   
+     - name: Set python interpreter
+       set_fact:
+         ansible_python_interpreter: /usr/bin/python3
 
      - name: Create a security group
        local_action: 
